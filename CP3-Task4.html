@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 4</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="month" placeholder="Enter month">
+        <input type="button" value="Submit" onclick="days()">
+    </form>
+    <p id="result"></p>
+    <script>
+        function days() {
+            var month = document.getElementById('month').value;
+            var result = "";
+            switch (month) {
+                case "Jan":
+                case "Mar":
+                case "May":
+                case "Jul":
+                case "Aug":
+                case "Oct":
+                case "Dec":
+                    result = "31";
+                    break;
+                case "Feb":
+                    result = "28 or 29";
+                    break;
+                case "Apr":
+                case "Jun":
+                case "Sep":
+                case "Nov":
+                    result = "30";
+                    break;
+                default:
+                    result = "Invalid month";
+            }
+            document.getElementById('result').innerHTML = "Result: " + result;
+        }
+    </script>
+</html>
