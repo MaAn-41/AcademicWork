@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign </title>
+    <link rel="stylesheet" href="CP4-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" onsubmit="return validateSignUpForm()">
+            <h2>Sign Up</h2>
+            <input type="text" id="signUpUsername" placeholder="Username" required>
+            <input type="email" id="signUpEmail" placeholder="Email" required>
+            <input type="password" id="signUpPassword" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <input type="date" id="birthdate" placeholder="Birthdate" required>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+            <input type="text" id="zipCode" placeholder="Zip Code" required>
+            <input type="text" id="country" placeholder="Country" required>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="Task2Signin.html">Sign In</a></p>
+        </form>
+    </div>
+    <script>
+        function validateSignUpForm() {
+            var username = document.getElementById('signUpUsername').value;
+            var email = document.getElementById('signUpEmail').value;
+            var password = document.getElementById('signUpPassword').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            var birthdate = document.getElementById('birthdate').value;
+            var phoneNumber = document.getElementById('phoneNumber').value;
+            var zipCode = document.getElementById('zipCode').value;
+            var country = document.getElementById('country').value;
+            if (username.trim() === '' || email.trim() === '' || password.trim() === '' || confirmPassword.trim() === '' || birthdate.trim() === '' || phoneNumber.trim() === '' || zipCode.trim() === '' || country.trim() === '') {
+                alert('All fields are required.');
+                return false;
+            }
+            if (password !== confirmPassword) {
+                alert('Passwords do not match.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>
