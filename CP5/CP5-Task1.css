@@ -1,0 +1,11 @@
+/* This is a single-line comment */
+p {
+    color: red; /* Set text color to red */
+  }
+  
+  /* This is a multi-line comment
+    spanning across multiple lines */
+  .special {
+    font-weight: bold;
+  }
+  
