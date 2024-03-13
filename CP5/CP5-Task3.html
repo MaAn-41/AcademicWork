@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Image with jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <img id="myImage" src="img.webp" alt="Skull" style="display: none;">
+  <button id="toggleButton">Show Image</button>
+
+  <script>
+    $(document).ready(function() {
+      $("#toggleButton").click(function() {
+        $("#myImage").toggle();
+        $(this).text($(this).text() === "Show Image" ? "Hide Image" : "Show Image");
+      });
+    });
+  </script>
+</body>
+</html>
