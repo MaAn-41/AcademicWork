@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Find Element Class and ID</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+
+<p id="demo" class="New">Click me to see my class and ID!</p>
+
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    
+    let myclass = $(this).attr("class");
+    let myId = $(this).attr("id");
+
+    alert("Class of the clicked element: " + myclass + "\nID of the clicked element: " + myId);
+  });
+});
+</script>
+
+</body>
+</html>
