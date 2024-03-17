@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.colon {
+    margin: 0 0.2em;
+    color: #a8a8a8;
+}
+
+.time {
+    min-width: 2ch;
+    text-align: center;
+}
+
+.ampm {
+    font-size: 0.5em;
+    margin-top: -0.2em;
+    margin-left: 0.9em;
+    color: #a8a8a8;
+    text-transform: uppercase;
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock-text {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.colon-animation {
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
