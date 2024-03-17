@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Task1.css" />
+    <title>Muhammad Usman Amjad</title>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="index.html" class="para">Usman Amjad</a>
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hey, I'm <span>Usman Amjad</span> <br />a Software Developer <br />
+            from Pakistan
+          </h1>
+        </div>
+      </div>
+    </div>
+    <section class="headerimg">
+      <img src="/Portfolio/images/MyLogo.png" alt="" />
+    </section>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/Portfolio/images/Aboutimage.jpg" alt="" />
+          </div>
+          <div class="about-col-1">
+            <h1 class="title">About Me</h1>
+            <p>
+              Hey, I'm Usman, and I'm passionate about crafting remarkable
+              online experiences. As a Software developer , my mission is to
+              bring your ideas to life on the digital canvas. With a keen eye
+              for design and a knack for the latest web technologies, I'm
+              committed to delivering websites that not only look fantastic but
+              also function flawlessly.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>ReactJS</span><br />Crafting Frontend for Tomorrow's Web
+                </li>
+                <li>
+                  <span>Django</span><br />Powering Dynamic Web Applications.
+                </li>
+                <li><span>MongoDB</span><br />Powering Web with MongoDB.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Feb 2024-Mar 2024</span><br />Web Development Intern
+                  @Coderscave
+                </li>
+                <li>
+                  <span>Oct 2023-Nov 2023</span><br />Web Development Intern
+                  @Codsoft
+                </li>
+                <li>
+                  <span>Sep 2023-Oct 2023</span><br />Web Development Intern
+                  @BehinDev
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021-Current</span><br />BSCS from FAST NUCES CFD</li>
+                <li><span>2019-2021</span><br />Govt Islamia College</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/Portfolio/images/ecommerce.jpg" alt="" />
+            <div class="layer">
+              <h3>Ecommerce-Website</h3>
+              <p>
+                Crafting intuitive e-commerce frontends for seamless shopping
+                experiences
+              </p>
+              <a href="file:///D:/1%20SEMESTER/ICT/ICT%20FINAL%20PROJECT/Home%20Decor/homedesign/Home.html" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="/Portfolio/images/game.png" alt="" />
+            <div class="layer">
+              <h3>Stone Paper Sciessor</h3>
+              <p>Play Game with computer</p>
+              <a href="https://weatherappbyusman.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Portfolio/images/weather.jpg" alt="" />
+            <div class="layer">
+              <h3>Weather Website</h3>
+              <p>
+                Stay informed, rain or shine: Weather website's user-friendly
+                interface for instant forecasts.
+              </p>
+              <a href="Task2.html" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square" target="_blank"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="" class="btn">See more</a>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>Usmanamjad495@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone-volume"></i>+92-3216692660</p>
+            <div class="social-icon">
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a
+                href="https://www.facebook.com/usman.amjad.568089/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
+            <a href="/Portfolio/images/Muhammad Usman Amjad CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="https://formspree.io/f/mleqwdzy" method="POST">
+              <input type="text" name="Name" placeholder="Your Name" />
+              <input type="email" name="Email" placeholder="Your Email" />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+              <button type="reset" class="btn btn2">Reset</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @Usman Amjad</p>
+      </div>
+    </div>
+    <script src="Task1.js"></script>
+  </body>
+</html>
